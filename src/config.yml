@@ -1,0 +1,38 @@
+WorldEvents:
+  SolarEclipse:
+    Enabled: true
+    Frequency: 20
+    Factor: 0.0
+    Element: Fire
+    Time: Day
+  LunarEclipse:
+    Enabled: true
+    Frequency: 40
+    Factor: 0.0
+    Element: Water
+    Time: Night
+  SozinsComet:
+    Enabled: true
+    Frequency: 100
+    Factor: 5.0
+    Element: Fire
+    Time: Day
+Abilities:
+  AvatarStateOnFinalBlow: true
+ElementAssign:
+  Enabled: false
+  Default: Earth
+  Percentages:
+    Air: 0.205
+    Fire: 0.205
+    Water: 0.205
+    Earth: 0.205
+    Chi: 0.18
+Storage:
+  engine: sqlite
+  MySQL:
+    host: localhost
+    port: 3306
+    pass: ''
+    db: minecraft
+    user: root
