@@ -67,7 +67,7 @@ public class HealingWaters {
         }
         for (PotionEffect effect : player.getActivePotionEffects()) {
             if (WaterMethods.isNegativeEffect(effect.getType())) {
-                if ((effect.getType() == PotionEffectType.BLINDNESS) && Smokescreen.blinded.containsKey(player.getName())) {
+                if ((effect.getType() == PotionEffectType.BLINDNESS)) {
                     return;
                 }
                 player.removePotionEffect(effect.getType());

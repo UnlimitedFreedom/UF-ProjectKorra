@@ -1392,9 +1392,9 @@ public class PKListener implements Listener {
                 if (abil.equalsIgnoreCase("Paralyze")) {
                     //
                 }
-                if (abil.equalsIgnoreCase("Smokescreen")) {
-                    new Smokescreen(player);
-                }
+//                if (abil.equalsIgnoreCase("Smokescreen")) {
+//                    new Smokescreen(player);
+//                }
                 if (abil.equalsIgnoreCase("WarriorStance")) {
                     new WarriorStance(player);
                 }
@@ -1434,31 +1434,31 @@ public class PKListener implements Listener {
         }
     }
 
-    @EventHandler(priority = EventPriority.HIGHEST, ignoreCancelled = true)
-    public void onProjectileHit(ProjectileHitEvent event) {
-        Integer id = event.getEntity().getEntityId();
-        Player player = (Player) event.getEntity().getShooter();
-        if (Commands.invincible.contains(player.getName()))
-        {
-            return;
-        }
-        if (Smokescreen.snowballs.contains(id)) {
-            Location loc = event.getEntity().getLocation();
-            Smokescreen.playEffect(loc);
-            for (Entity en : GeneralMethods.getEntitiesAroundPoint(loc, Smokescreen.radius)) {
-                Smokescreen.applyBlindness(en);
-            }
-            Smokescreen.snowballs.remove(id);
-        }
-        //		if (Combustion.fireballs.contains(id)) {
-        //			Location loc = event.getEntity().getLocation();
-        ////			for (Entity en: Methods.getEntitiesAroundPoint(loc, 4)) {
-        ////				if (en instanceof LivingEntity) {
-        ////					LivingEntity le = (LivingEntity) en;
-        ////					le.damage(ProjectKorra.plugin.getConfig().getDouble("Abilities.Fire.Combustion.Damage"));
-        ////				}
-        ////			}
-        //		}
-    }
+//    @EventHandler(priority = EventPriority.HIGHEST, ignoreCancelled = true)
+//    public void onProjectileHit(ProjectileHitEvent event) {
+//        Integer id = event.getEntity().getEntityId();
+//        Player player = (Player) event.getEntity().getShooter();
+//        if (Commands.invincible.contains(player.getName()))
+//        {
+//            return;
+//        }
+//        if (Smokescreen.snowballs.contains(id)) {
+//            Location loc = event.getEntity().getLocation();
+//            Smokescreen.playEffect(loc);
+//            for (Entity en : GeneralMethods.getEntitiesAroundPoint(loc, Smokescreen.radius)) {
+//                Smokescreen.applyBlindness(en);
+//            }
+//            Smokescreen.snowballs.remove(id);
+//        }
+//        //		if (Combustion.fireballs.contains(id)) {
+//        //			Location loc = event.getEntity().getLocation();
+//        ////			for (Entity en: Methods.getEntitiesAroundPoint(loc, 4)) {
+//        ////				if (en instanceof LivingEntity) {
+//        ////					LivingEntity le = (LivingEntity) en;
+//        ////					le.damage(ProjectKorra.plugin.getConfig().getDouble("Abilities.Fire.Combustion.Damage"));
+//        ////				}
+//        ////			}
+//        //		}
+//    }
 
 }

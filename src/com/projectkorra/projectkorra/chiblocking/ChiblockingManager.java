@@ -19,7 +19,7 @@ public class ChiblockingManager implements Runnable {
         WarriorStance.progressAll();
         AcrobatStance.progressAll();
         for (Player player : Bukkit.getOnlinePlayers()) {
-            Smokescreen.removeFromHashMap(player);
+//            Smokescreen.removeFromHashMap(player);
             if (Paralyze.isParalyzed(player)) {
                 player.setFallDistance(0F);
             }
