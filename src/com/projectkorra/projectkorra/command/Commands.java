@@ -103,7 +103,7 @@ public class Commands {
                 }
 
                 if (args.length == 0) {
-                    s.sendMessage(ChatColor.YELLOW + "RubyFreedom Bending");
+                    s.sendMessage(ChatColor.YELLOW + "UnlimitedFreedom Bending");
                     s.sendMessage(ChatColor.RED + "/bending help [Ability/Command] " + ChatColor.YELLOW + "Display help.");
                     s.sendMessage(ChatColor.RED + "/bending choose [Element] " + ChatColor.YELLOW + "Choose an element.");
                     s.sendMessage(ChatColor.RED + "/bending bind [Ability] # " + ChatColor.YELLOW + "Bind an ability.");

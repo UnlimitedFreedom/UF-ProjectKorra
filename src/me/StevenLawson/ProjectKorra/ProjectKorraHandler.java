@@ -20,9 +20,9 @@ public class ProjectKorraHandler {
     }
 
     public static Plugin getTFM() {
-        final Plugin tfm = Bukkit.getPluginManager().getPlugin("RubyFreedomMod");
+        final Plugin tfm = Bukkit.getPluginManager().getPlugin("UnlimitedFreedomMod");
         if (tfm == null) {
-            logger.warning("Could not resolve plugin: RubyFreedomMod");
+            logger.warning("Could not resolve plugin: UnlimitedFreedomMod");
         }
 
         return tfm;
